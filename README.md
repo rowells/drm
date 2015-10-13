@@ -1,5 +1,4 @@
-# drm
-### Dynamic Runtime Modularity
+## Dynamic Runtime Modularity
 ####Team
 - Michael Brughelli
 - Jon Huang
