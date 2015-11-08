@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<project name="simple_graphics" default="all">
+	<property name="kf.dir" 
+		location="../../libs/knopflerfish_osgi_5.2.0" />
+	<property name="framework.jar" 
+		location="${kf.dir}/osgi/framework.jar" />
+	<target name="all" 
+		depends="init,compile,jar" />
+	<target name="init">
+		<mkdir dir="build/classes" />
+	</target>
+	<target name="compile">
+		<javac destdir="build/classes" debug="on" srcdir="src">
+			<classpath>
+				<pathelement location="${framework.jar}" />
+			</classpath>
+		</javac>
+	</target>
+	<target name="jar">
+		<jar 
+			basedir="build/classes" 
+			jarfile="build/${ant.project.name}.jar" 
+			compress="true" includes="**/*" 
+			manifest="META-INF/manifest.mf" />
+	</target>
+	<target name="clean">
+		<delete dir="build" />
+	</target>
+</project>

@@ -1,0 +1,10 @@
+Manifest-Version: 2.0
+Bundle-Name: simpleGraphics
+Bundle-SymbolicName: com.rtn.drm.simpleGraphics
+Bundle-Version: 1.0.0
+Bundle-Description: A bundle to display simple graphics.
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.simpleGraphics.impl.Activator
+Bundle-Category: example
+Import-Package: org.osgi.framework, javax.swing
+Export-Package: com.rtn.drm.simpleGraphics
