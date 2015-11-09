@@ -1,0 +1,7 @@
+libs/knopflerfish_osgi_5.2.0/**
+.classpath
+.project
+.settings
+.settings/
+bin/
+classes/

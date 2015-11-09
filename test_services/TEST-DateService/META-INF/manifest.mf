@@ -1,0 +1,10 @@
+Manifest-Version: 2.0
+Bundle-Name: TEST-DateService
+Bundle-SymbolicName: TEST-DateService
+Bundle-Version: 1.0.0
+Bundle-Description: Test Bundle
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.test.date.osgi.DateServiceActivator
+Bundle-Category: example
+Import-Package: org.osgi.framework,
+                com.rtn.drm.test.date.service

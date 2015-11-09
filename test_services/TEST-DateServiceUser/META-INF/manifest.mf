@@ -1,0 +1,12 @@
+Manifest-Version: 2.0
+Bundle-Name: TEST-DateServiceUser
+Bundle-SymbolicName: TEST-DateServiceUser
+Bundle-Version: 1.0.0
+Bundle-Description: Test Bundle
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.test.dateuser.osgi.DateServiceUserActivator
+Bundle-Category: example
+Import-Package: org.osgi.framework, 
+                org.osgi.util.tracker,
+                com.rtn.drm.test.date.service,
+                javax.swing

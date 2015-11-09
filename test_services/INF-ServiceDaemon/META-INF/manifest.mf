@@ -1,0 +1,13 @@
+Manifest-Version: 2.0
+Bundle-Name: INF-ServiceDaemon
+Bundle-SymbolicName: INF-ServiceDaemon
+Bundle-Version: 1.0.0
+Bundle-Description: Test Bundle
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.servicedaemon.osgi.ServiceDaemonActivator
+Bundle-Category: example
+Import-Package: org.osgi.framework, 
+                org.osgi.util.tracker,
+                org.knopflerfish.util,
+                 org.osgi.service.cm
+                

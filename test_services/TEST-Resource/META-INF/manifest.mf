@@ -1,0 +1,10 @@
+Manifest-Version: 2.0
+Bundle-Name: TEST-Resource
+Bundle-SymbolicName: TEST-Resource
+Bundle-Version: 1.0.0
+Bundle-Description: Test Bundle
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.test.resource.osgi.ResourceActivator
+Bundle-Category: example
+Import-Package: org.osgi.framework, org.osgi.service.cm
+Export-Package: com.rtn.drm.test.resource.service

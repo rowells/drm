@@ -1,0 +1,11 @@
+Manifest-Version: 2.0
+Bundle-Name: TEST-Services
+Bundle-SymbolicName: TEST-Services
+Bundle-Version: 1.0.0
+Bundle-Description: Test Bundle
+Bundle-Vendor: Knopflerfish
+Bundle-Category: example
+Export-Package: com.rtn.drm.test.date.service,
+                com.rtn.drm.test.dateformat.service,
+                com.rtn.drm.test.resource.service,
+                com.rtn.drm.test.platform.service
