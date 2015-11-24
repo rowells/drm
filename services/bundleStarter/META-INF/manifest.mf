@@ -1,0 +1,10 @@
+Manifest-Version: 2.0
+Bundle-Name: bundleStarter
+Bundle-SymbolicName: com.rtn.drm.bundleStarter
+Bundle-Version: 1.0.0
+Bundle-Description: A bundle that installs, starts, stops and uninstalls the simpleGraphicService.
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.bundleStarter.impl.Activator
+Bundle-Category: example
+Import-Package: org.osgi.framework
+Export-Package: com.rtn.drm.bundleStarter
