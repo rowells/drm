@@ -1,0 +1,10 @@
+Manifest-Version: 2.0
+Bundle-Name: clientDependencyResolver
+Bundle-SymbolicName: com.rtn.drm.cdr
+Bundle-Version: 1.0.0
+Bundle-Description: A bundle that resolves dependencies through communication with a server.
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.cdr.impl.Activator
+Bundle-Category: clientDependencyResolver
+Import-Package: org.osgi.framework
+Export-Package: com.rtn.drm.cdr
