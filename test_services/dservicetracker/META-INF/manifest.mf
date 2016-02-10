@@ -1,0 +1,10 @@
+Manifest-Version: 2.0
+Bundle-Name: dservicetracker
+Bundle-SymbolicName: org.knopflerfish.tutorial.dateservicetracker
+Bundle-Version: 1.0.0
+Bundle-Description: Demo Service User Bundle for the KF OSGi tutorial
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: org.knopflerfish.tutorial.dateservicetracker.impl.Activator
+Bundle-Category: example
+Import-Package: org.osgi.framework,org.knopflerfish.tutorial.dateservice,org.osgi.util.tracker
+Export-Package: org.knopflerfish.tutorial.dateservicetracker
