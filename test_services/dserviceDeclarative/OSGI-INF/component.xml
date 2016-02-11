@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<component 
+	xmlns = "http://www.osgi.org/xmlns/scr/v1.0.0"
+	name  = "org.knopflerfish.tutorial.dserviceDeclarative">
+
+	<implementation 
+		class="org.knopflerfish.tutorial.dserviceDeclarative.impl.Component"
+		/>
+	<!--
+	<service servicefactory="false">
+		<provide interface="org.knopflerfish.tutorial.dateservice.DateService"/>
+		</service>
+	-->
+	<reference name = "DateService"
+	     interface = "org.knopflerfish.tutorial.dateservice.DateService"
+	     bind = "setDateService"
+	     unbind = "unsetDateService"
+		/>
+</component>
