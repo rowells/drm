@@ -1,0 +1,9 @@
+Manifest-Version: 2.0
+Bundle-Name: rgbBlue
+Bundle-SymbolicName: com.rtn.drm.rgbBlue
+Bundle-Version: 1.0.0
+Bundle-Description: A bundle to display rgb values.
+Bundle-Vendor: Knopflerfish
+Bundle-Activator: com.rtn.drm.rgbBundle.impl.Activator
+Import-Package: org.osgi.framework, javax.swing
+Export-Package: com.rtn.drm.rgbBundle
