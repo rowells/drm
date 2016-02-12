@@ -12,8 +12,7 @@ public class Activator implements BundleActivator{
 	public static BundleContext bundleContext = null;
 	private Bundle bundle = null;
 	private String bundleToStart = "simple_graphics";
-	private String simpleGraphicsPath = "file:C:\\Users\\MICHAEL\\Desktop\\SCHOOL\\FALL 2015\\CSCI 4308\\drm\\services"
-			+ "\\simpleGraphicService\\build\\simple_graphics.jar";
+	private String simpleGraphicsPath = "file:C:\\Users\\The King\\Documents\\GitHub\\drm\\services\\simpleGraphicService\\build\\simple_graphics.jar";
 	
 	public void start(BundleContext bundleContext) throws Exception {
 		System.out.println("Starting bundleStarter.");
