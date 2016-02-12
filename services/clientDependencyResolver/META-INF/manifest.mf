@@ -6,5 +6,5 @@ Bundle-Description: A bundle that resolves dependencies through communication wi
 Bundle-Vendor: Knopflerfish
 Bundle-Activator: com.rtn.drm.cdr.impl.Activator
 Bundle-Category: clientDependencyResolver
-Import-Package: org.osgi.framework
+Import-Package: org.osgi.framework, com.rtn.drm.rgbBundle, org.osgi.util.tracker
 Export-Package: com.rtn.drm.cdr

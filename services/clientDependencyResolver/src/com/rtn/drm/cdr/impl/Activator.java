@@ -4,30 +4,30 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
 import org.osgi.util.tracker.ServiceTracker;
+import org.osgi.util.tracker.ServiceTrackerCustomizer;
 
-import com.rtn.drm.cdr.serviceTrackerCustomizer.SomeServiceTrackerCustomizer;
+import com.rtn.drm.cdr.serviceTrackerCustomizer.ColorTrackerCustomizer;
+import com.rtn.drm.rgbBundle.IColor;
 
 // TODO Provide the appropriate service tracker 
 public class Activator implements BundleActivator {
 	
 	public static BundleContext bundleContext = null;
-	private ServiceTracker someServiceTracker;
+	private ServiceTracker colortracker;
 	
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.bundleContext = bundleContext;
 		log("Starting CDR.");
-		// TODO Start tracking services, e.g.:
-		//SomeServiceTrackerCustomizer tracker = 
-		//		new SomeServiceTrackerCustomizer(Activator.bundleContext);
-		//someServiceTracker = new ServiceTracker(bundleContext, filter, tracker);
-		//someServiceTracker.open();
+		ServiceTrackerCustomizer customizer = 
+				new ColorTrackerCustomizer(Activator.bundleContext);
+		colortracker = new ServiceTracker(bundleContext, IColor.class.getName(),customizer);
+		colortracker.open();
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
 		log("Stopping CDR.");
 		Activator.bundleContext = null;
-		// TODO Stop tracking services, e.g.:
-		//someServicetracker.close();
+		colortracker.close();
 	}
 	
 	private void log(String message) {
